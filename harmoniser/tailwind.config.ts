@@ -17,6 +17,14 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        // This is our selected contrast color palette for accessibility
+        'colours': {
+          1: '#b9e192',
+          2: '#cfebb6',
+          3: '#b3c7f7',
+          4: '#f8b8d0',
+          5: '#f194b8',
+        },
       },
     },
     keyframes: {
