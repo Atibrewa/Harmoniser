@@ -13,20 +13,26 @@ export default function Page() {
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             Welcome to Harmoniser. A place to sleep, relax, focus, and let all of your stress melt away.
           </p>
-          <h1 className = 'text-xl'>Returning User?</h1>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
-          <h1 className = 'text-xl'>New Here?</h1>
-          <Link
-            href="/signup"
-            className="flex items-center gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 md:text-base"
-          >
-            <span>Sign Up</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
+          <div className="flex gap-6">
+            <div className = "flex flex-col justify-center gap-6">
+              <h1 className = 'text-xl'>Returning User?</h1>
+              <Link
+                href="/login"
+                className="flex items-center gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 md:text-base"
+              >
+              <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+              </Link>
+            </div>
+            <div className="flex flex-col justify-center gap-6">
+              <h1 className = 'text-xl'>New Here?</h1>
+              <Link
+                href="/signup"
+                className="flex items-center gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 md:text-base"
+              >
+                <span>Sign Up</span> <ArrowRightIcon className="w-5 md:w-6" />
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
