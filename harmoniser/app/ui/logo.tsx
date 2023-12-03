@@ -1,13 +1,26 @@
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { verdana } from '@/app/ui/fonts';
+import { comfortaa } from '@/app/ui/fonts';
+import Image from 'next/image';
 
-export default function AcmeLogo() {
+export default function Logo() {
   return (
     <div
-      className={`${verdana.className} flex flex-row items-center leading-none text-white`}
+      className={`${comfortaa.className} flex flex-row items-center leading-none text-white`}
     >
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[30px]">Harmoniser</p>
+      <Image 
+      src='/logo.png' 
+      width={80}
+      height={80}
+      className='block md:hidden'
+      alt={'Logo of website'} />
+
+      <Image 
+      src='/logo.png' 
+      width={150}
+      height={150}
+      className='md:block hidden'
+      alt={'Logo of website'} />
+
+      <p className="text-[54px]">Harmoniser</p>
     </div>
   );
 }
