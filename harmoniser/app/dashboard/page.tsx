@@ -1,3 +1,6 @@
+import Visualiser from "../ui/dashboard/render-visualiser";
+
 export default function Page() {
-    return <p>Dashboard Page</p>;
+    const tempvis = Visualiser('hello');
+    return tempvis;
   }
