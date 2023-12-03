@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import VisualizerLinks from './visualizer-links';
+import VisualizerLinks from './visualizers-list';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import Logo from '@/app/ui/logo';
 import { PowerIcon } from '@heroicons/react/24/outline';

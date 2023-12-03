@@ -1,5 +1,6 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 import TopNav from '@/app/ui/dashboard/topnav';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
