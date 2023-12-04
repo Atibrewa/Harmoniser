@@ -10,7 +10,7 @@ import {
   const visualizers = [
     { name: 'Upbeat', icon: MusicalNoteIcon},
     { name: 'Calming', icon: MusicalNoteIcon},
-    { name: 'Soothing', icon: MusicalNoteIcon},
+    { name: 'Soothing', icon: MusicalNoteIcon},    
   ];
   
   export default function VisualizersList() {

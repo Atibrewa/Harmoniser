@@ -42,14 +42,14 @@ export default function Page() {
             width={1000}
             height={760}
             className="hidden md:block"
-            alt="A graphic of a woman listening to music ina yoga pose, desktop version"
+            alt="A graphic of a woman listening to music in a yoga pose, desktop version"
           />
           <Image 
             src="/landing_mobile.png"
             width={560}
             height={620}
             className="block md:hidden"
-            alt="A graphic of a woman listening to music ina yoga pose, mobile version"
+            alt="A graphic of a woman listening to music in a yoga pose, mobile version"
           />
         </div>
       </div>
