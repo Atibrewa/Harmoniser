@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex flex-col justify-left h-20">
             <TopNav />
         </div>
-        <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+        <div className="flex-grow p-4 justify-center md:overflow-y-auto">{children}</div>
       </div>
     </div>
     </>
