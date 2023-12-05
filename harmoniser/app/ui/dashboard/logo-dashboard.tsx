@@ -8,8 +8,8 @@ export default function LogoDashboard() {
     >
       <Image 
       src='/logo.png' 
-      width={80}
-      height={80}
+      width={50}
+      height={50}
       className='block md:hidden'
       alt={'Logo of website'} />
 
@@ -20,7 +20,8 @@ export default function LogoDashboard() {
       className='md:block hidden'
       alt={'Logo of website'} />
 
-      <p className="text-[30px]">Harmoniser</p>
+      <p className="md:block hidden text-[30px]">Harmoniser</p>
+      <p className="md:hidden block text-[18px]">Harmoniser</p>
     </div>
   );
 }
