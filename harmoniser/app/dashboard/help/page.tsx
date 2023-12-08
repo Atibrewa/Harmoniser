@@ -12,6 +12,6 @@ export default function Page() {
     <p className={p}>We currently have three visualisers with the themes soothing, upbeat and calming.</p><br></br>
     <h2 className={h2}>What is it meant for?</h2>
     <p className={p}>________</p><br></br>
-    </div>
+  </div>
 
 }

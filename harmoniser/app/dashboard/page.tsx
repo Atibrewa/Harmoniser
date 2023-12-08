@@ -7,5 +7,5 @@ export default function Page() {
   return <div className={`rounded-lg bg-colours-2 p-6`}>
   <h1 className={`${comfortaa.className} text-2xl md:text-3xl`}>Harmoniser</h1><br></br>
     {tempvis}
-  </div>
+  </div>;
 }

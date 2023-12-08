@@ -5,7 +5,7 @@ import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { comfortaa } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
- 
+
 export default async function Page({
     searchParams,
   }: {
