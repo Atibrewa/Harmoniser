@@ -7,12 +7,12 @@ import {
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
 
-export default function LoginForm() {
+export default function SignUpForm() {
   return (
     <form className="space-y-3">
       <div className="flex-1 rounded-lg bg-colours-2 px-6 pb-4 pt-8">
         <h1 className={`${verdana.className} mb-3 text-2xl`}>
-          Please log in to continue.
+          Please fill in the fields below to sign up.
         </h1>
         <div className="w-full">
           <div>
@@ -55,7 +55,7 @@ export default function LoginForm() {
             </div>
           </div>
         </div>
-        <LoginButton />
+        <SignUpButton />
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
         </div>
@@ -64,10 +64,10 @@ export default function LoginForm() {
   );
 }
 
-function LoginButton() {
+function SignUpButton() {
   return (
     <Button className="mt-4 w-full bg-colours-5 hover:bg-colours-4">
-      Log In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+      Sign Up <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
     </Button>
   );
 }
