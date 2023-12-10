@@ -2,6 +2,7 @@ import {
   HomeIcon,
   QuestionMarkCircleIcon,
   CogIcon,
+  BookOpenIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
@@ -15,6 +16,7 @@ const links = [
     icon: QuestionMarkCircleIcon,
   },
   { name: 'Settings', href: '/dashboard/settings', icon: CogIcon },
+  { name: 'Credits', href: '/dashboard/credits', icon: BookOpenIcon },
 ];
 
 export default function NavLinks() {
