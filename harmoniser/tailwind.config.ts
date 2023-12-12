@@ -26,6 +26,13 @@ const config: Config = {
           4: '#f8b8d0',
           5: '#f194b8',
         },
+        'colours-dark': {
+          1: '#0d2a0f',
+          2: '#044b15',
+          3: '#041876',
+          4: '#7b0b0c',
+          5: '#580408',
+        },
       },
     },
     keyframes: {
