@@ -1,3 +1,11 @@
+'use client';
+
+import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { useRouter } from 'next/navigation'
+import { FormEvent, useEffect, useState } from 'react'
+
+import type { Database } from '@/app/lib/database.types'
+
 import { verdana } from '@/app/ui/fonts';
 import {
   AtSymbolIcon,
@@ -7,9 +15,50 @@ import {
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
 
+/**
+ * Creates the login form for the Login Page and handles user login authentication.
+ */
+
 export default function LoginForm() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const router = useRouter()
+
+  const [user, setUser] = useState<User | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  const supabase = createClientComponentClient<Database>()  // connect this page to supabase
+
+  useEffect(() => {
+    async function getUser() {
+      const {data: {user}} = await supabase.auth.getUser()
+      setUser(user)
+      setLoading(false)
+    }
+
+    getUser()
+  }, [])
+
+  const handleLogIn = async (event: FormEvent) => {
+    event.preventDefault();
+    const res = await supabase.auth.signInWithPassword({
+      email,
+      password
+    })
+    setUser(res.data.user)
+    router.push('/dashboard')
+    setEmail('')
+    setPassword('')
+  }
+
+  // console.log({loading, user})
+
+  if (loading) {
+    return <h1>loading...</h1>
+  }
+
   return (
-    <form className="space-y-3">
+    <form onSubmit={handleLogIn} className="space-y-3">
       <div className="flex-1 rounded-lg bg-colours-2 px-6 pb-4 pt-8">
         <h1 className={`${verdana.className} mb-3 text-2xl`}>
           Please log in to continue.
@@ -30,6 +79,8 @@ export default function LoginForm() {
                 name="email"
                 placeholder="Enter your email address"
                 required
+                onChange={(e) => setEmail(e.target.value)} 
+                value={email}
               />
               <AtSymbolIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
             </div>
@@ -50,12 +101,20 @@ export default function LoginForm() {
                 placeholder="Enter password"
                 required
                 minLength={6}
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
               />
               <KeyIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
             </div>
           </div>
         </div>
-        <LoginButton />
+        
+        <Button 
+          className="mt-4 w-full bg-colours-5 hover:bg-colours-4"
+        >
+          Log In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+        </Button>
+
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
         </div>
@@ -64,10 +123,3 @@ export default function LoginForm() {
   );
 }
 
-function LoginButton() {
-  return (
-    <Button className="mt-4 w-full bg-colours-5 hover:bg-colours-4">
-      Log In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
-    </Button>
-  );
-}
