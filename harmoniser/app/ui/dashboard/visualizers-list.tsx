@@ -9,8 +9,9 @@ import {
   // Depending on the size of the application, this would be stored in a database.
   const visualizers = [
     { name: 'Upbeat Study', icon: MusicalNoteIcon},
-    { name: 'Calming', icon: MusicalNoteIcon},
-    { name: 'Soothing', icon: MusicalNoteIcon},    
+    { name: 'Calming Lava', icon: MusicalNoteIcon},
+    { name: 'Peaceful Leaves', icon: MusicalNoteIcon},
+    { name: 'Soothing Rain', icon: MusicalNoteIcon},    
   ];
 
   function changeSource(name: string) {
