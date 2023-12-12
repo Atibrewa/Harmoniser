@@ -16,9 +16,7 @@ import {
   function changeSource(name: string) {
     const visualizer = document.querySelector("video");
     const visualizerPromise = import('@/public/visualizers/' + name + '.mp4');
-    console.log(visualizerPromise);
-    const visualizerSrc = visualizerPromise.then(function(result) {
-      console.log(result);
+    visualizerPromise.then(function(result) {
       const path = result.default;
       visualizer?.setAttribute("src", path)
     });
