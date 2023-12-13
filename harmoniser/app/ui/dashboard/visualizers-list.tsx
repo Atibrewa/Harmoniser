@@ -26,7 +26,7 @@ import {
   export default function VisualizersList() {
     return (
       <>
-        <a className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-colours-2 p-3 text-sm font-medium hover:bg-colours-1 hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3"
+        <a className="flex h-[48px] grow text-colors_default items-center justify-center gap-2 rounded-md bg-block p-3 text-sm font-medium hover:bg-headerblock hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3"
           href="/dashboard/search">
           <MagnifyingGlassIcon className="w-6" />
           <p className="hidden md:block">Search Visualizers</p>
@@ -36,7 +36,7 @@ import {
           return (
             <button
               key={visualizer.name}
-              className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-colours-2 p-3 text-sm font-medium hover:bg-colours-1 hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3"
+              className="flex h-[48px] grow text-colors_default items-center justify-center gap-2 rounded-md bg-block p-3 text-sm font-medium hover:bg-headerblock hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3"
               onClick={() => changeSource(visualizer.name)}
             >
               <LinkIcon className="w-6" />

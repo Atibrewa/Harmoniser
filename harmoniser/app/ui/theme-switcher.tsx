@@ -37,11 +37,11 @@ function ThemeSwitcher() {
     console.log(`${storedTheme} selected`);
   }, [storedTheme]);
   return (
-    <div className='theme-switcher items-center ml-12'>
+    <div className='theme-switcher items-center'>
       <button
         type='button'
         className={`dark-mode-switch cursor-pointer mr-6 w-[40px] h-[40px] p-[10px] rounded-[100%]
-        border ${!isLight && 'hidden'}`}
+        border border-black ${!isLight && 'hidden'}`}
         onClick={setDarkTheme}
       >
         <svg
@@ -66,7 +66,7 @@ function ThemeSwitcher() {
           xmlns='http://www.w3.org/2000/svg'
           // width="20"
           // height="20"
-          fill='currentColor'
+          fill='white'
           className='bi bi-brightness-high w-[18px] h-[18px]'
           viewBox='0 0 16 16'
         >

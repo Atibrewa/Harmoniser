@@ -10,11 +10,14 @@ export default function Page() {
     ssr: false,
   });
 
-  return <div className={`rounded-lg bg-default p-6`}>
+  return <div className={`rounded-lg bg-block p-6`}>
     <h1 className={`${comfortaa.className} text-2xl md:text-3xl text-colors_default`}>Settings</h1><br></br>
-    <h2 className={h2}>Hi there! We're working on adding a colour blind mode and other fun settings soon! Hang tight :)</h2>
-    <DynamicThemeSwitcher />
-    <p className={`text-colors_default`}>Testing Theme Switcher Above</p>
+    <h2 className={h2}>Hi there! We're working on adding a colour blind mode and other fun settings soon! Currently we have
+    implemented a dark mode toggle. Hang tight :)</h2>
+    <div className="flex flex-row p-6">
+      <DynamicThemeSwitcher />
+      <p className={`text-colors_default mt-auto mb-auto`}>Light/Dark Mode Toggle</p>
+    </div>
   </div>
 
 }

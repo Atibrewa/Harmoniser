@@ -3,6 +3,7 @@
 import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import { FormEvent, useEffect, useState } from 'react'
+import { comfortaa } from '@/app/ui/fonts';
 
 import type { Database } from '@/app/lib/database.types'
 
@@ -39,13 +40,13 @@ export default function TopNav() {
   return (
     <div className="flex h-full flex-row px-3 py-4 md:px-2">
       <div className="flex grow flex-row justify-between gap-2 space-x-2 md:flex-row md:space-x-0 md:space-y-2">
-        <div className="flex h-[48px] grow items-center !justify-center gap-2 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3 rounded-md bg-colours-1 w-32 text-white md:w-40">
+        <div className="flex h-[48px] grow text-colors_default items-center !justify-center gap-2 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3 rounded-md bg-headerblock w-32 md:w-40">
           <p>Welcome, Listener.</p>
         </div>
         <NavLinks />
-        <div className="!mt-0 hidden h-[48px] w-full rounded-md bg-colours-2 md:block"></div>
+        <div className="!mt-0 hidden h-[48px] w-full rounded-md bg-block md:block"></div>
         <form onSubmit={handleSignOut} className="!mt-0">
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-colours-2 p-3 text-sm font-medium hover:bg-colours-1 hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3">
+          <button className="flex h-[48px] w-full grow text-colors_default items-center justify-center gap-2 rounded-md bg-block p-3 text-sm font-medium hover:bg-headerblock hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3">
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
           </button>
