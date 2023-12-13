@@ -39,7 +39,7 @@ export default function TopNav() {
   return (
     <div className="flex h-full flex-row px-3 py-4 md:px-2">
       <div className="flex grow flex-row justify-between gap-2 space-x-2 md:flex-row md:space-x-0 md:space-y-2">
-        <div className="flex h-[48px] grow items-center justify-center gap-2 p-3 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3 rounded-md bg-colours-1 w-32 text-white md:w-40">
+        <div className="flex h-[48px] grow items-center !justify-center gap-2 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3 rounded-md bg-colours-1 w-32 text-white md:w-40">
           <p>Welcome, Listener.</p>
         </div>
         <NavLinks />
