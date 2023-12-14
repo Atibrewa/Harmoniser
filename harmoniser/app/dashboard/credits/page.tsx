@@ -1,3 +1,9 @@
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Credits',
+};
+
 import { comfortaa, verdana, verdana_italic } from "@/app/ui/fonts"
 
 export default function Page() {

@@ -1,3 +1,9 @@
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'SignUp',
+};
+
 import LogoDashboard from '@/app/ui/dashboard/logo-dashboard';
 import SignUpForm from '@/app/ui/signup-form';
  

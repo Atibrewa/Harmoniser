@@ -1,3 +1,13 @@
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Harmoniser',
+    default: 'Harmoniser',
+  },
+  description: 'An accessibility focused, web based visualiser to serve your listening needs',
+};
+
 import '@/app/ui/global.css';
 
 export default function RootLayout({

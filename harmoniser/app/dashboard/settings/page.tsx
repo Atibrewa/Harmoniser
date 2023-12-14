@@ -1,5 +1,11 @@
 'use client'
 
+// import { Metadata } from 'next';
+ 
+// export const metadata: Metadata = {
+//   title: 'Settings',
+// };
+
 import { comfortaa, verdana, verdana_italic } from "@/app/ui/fonts";
 import dynamic from 'next/dynamic';
 

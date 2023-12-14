@@ -1,3 +1,5 @@
+Reference file with Hex Codes for our light/regular theme colour palette
+
 #b9e192, #000000
 #cfebb6, #000000
 #b3c7f7, #000000
