@@ -61,10 +61,10 @@ Video Clips: [Lisa Fotios](https://www.pexels.com/@fotios-photos/)
 ### Code Tutorials
 [React Foundations](https://nextjs.org/learn/react-foundations)
 [Learn Next.js](https://nextjs.org/learn/dashboard-app)
-Supabase
+[Next.js Authentication with Supabase](https://www.youtube.com/watch?v=dhXjHGklaZc)
 
 ### More Thanks
-We'd also really like to thank our professor, _____________ for her help and support throughout the course of this project, our classmates and testers for making this so fun and giving us such great feedback and of course, the people on the world wide web, specially stack overflow, for their constant help when one gets stuck.
+We'd also really like to thank our professor, Joslenne ________ for her help and support throughout the course of this project, our classmates and testers for making this so fun and giving us such great feedback and of course, the people on the world wide web, specially stack overflow, for their constant help when one gets stuck.
 
 From the harmonisers,
 Thank you!
