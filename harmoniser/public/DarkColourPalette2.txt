@@ -1,5 +1,0 @@
-#014e11, #ffffff
-#0c751e, #ffffff
-#0c30a0, #ffffff
-#a51520, #ffffff
-#770813, #ffffff

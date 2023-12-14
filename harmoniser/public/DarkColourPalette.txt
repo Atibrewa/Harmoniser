@@ -1,5 +1,5 @@
 #0d2a0f, #ffffff
 #044b15, #ffffff
-#041876, #ffffff
+#041876, #ffffff (alternate: #141452)
 #7b0b0c, #ffffff
 #580408, #ffffff

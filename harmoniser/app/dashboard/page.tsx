@@ -10,7 +10,7 @@ import { NextResponse } from 'next/server'
 
 import type { Database } from '@/app/lib/database.types'
 
-import Visualiser from "../ui/dashboard/render-visualiser";
+import Visualiser from "../ui/dashboard/home-video";
 import { comfortaa } from "../ui/fonts";
 import Link from "next/link";
 
