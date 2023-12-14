@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     template: '%s | Harmoniser',
     default: 'Harmoniser',
   },
+  icons: {
+    icon: '/favicon.ico',
+  },
   description: 'An accessibility focused, web based visualiser to serve your listening needs',
 };
 
