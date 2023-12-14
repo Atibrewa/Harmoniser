@@ -124,6 +124,8 @@ export default function SignUpForm() {
           >
             Sign Up <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
           </Button>
+
+          <p><a href="/login">If you already have an account, click here to log in.</a></p>
   
           <div className="flex h-8 items-end space-x-1">
             {/* Add form errors here */}

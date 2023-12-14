@@ -115,6 +115,8 @@ export default function LoginForm() {
           Log In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
         </Button>
 
+        <p><a href="/signup">If you don't have an account, click here to sign up.</a></p>
+
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
         </div>
