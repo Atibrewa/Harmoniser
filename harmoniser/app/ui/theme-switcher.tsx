@@ -8,15 +8,28 @@ function ThemeSwitcher() {
     }
     return true;
   };
+
   const [isLight, setIsLight] = useState(checkTheme);
+  const smallLogo = document.querySelector("img");
+  const largeLogo = document.querySelectorAll("img").item(1);
+
   function setLightTheme() {
     setIsLight(true);
     window.localStorage.setItem('prefered-theme', 'lightTheme');
+    smallLogo?.setAttribute("src", "/_next/image?url=%2Flogo.png&w=256&q=75");
+    smallLogo?.setAttribute("srcset", "/_next/image?url=%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Flogo_dark.png&w=256&q=75");
+    largeLogo?.setAttribute("src", "/_next/image?url=%2Flogo.png&w=256&q=75");
+    largeLogo?.setAttribute("srcset", "/_next/image?url=%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Flogo_dark.png&w=256&q=75");
   }
   function setDarkTheme() {
     setIsLight(false);
     window.localStorage.setItem('prefered-theme', 'darkTheme');
+    smallLogo?.setAttribute("src", "/_next/image?url=%2Flogo_dark.png&w=256&q=75");
+    smallLogo?.setAttribute("srcset", "/_next/image?url=%2Flogo_dark.png&w=128&q=75 1x, /_next/image?url=%2Flogo_dark.png&w=256&q=75");
+    largeLogo?.setAttribute("src", "/_next/image?url=%2Flogo_dark.png&w=256&q=75");
+    largeLogo?.setAttribute("srcset", "/_next/image?url=%2Flogo_dark.png&w=128&q=75 1x, /_next/image?url=%2Flogo_dark.png&w=256&q=75");
   }
+  
   useEffect(() => {
     const setTheme = () => {
       const root = window.document.documentElement;
