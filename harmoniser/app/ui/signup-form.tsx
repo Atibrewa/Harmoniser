@@ -59,7 +59,12 @@ export default function SignUpForm() {
   }
 
   if (complete) {
-    return <h1>Verify your email</h1>
+    return <div className="flex-1 rounded-lg bg-colours-2 px-6 pb-4 pt-8">
+      <h1 className={`${verdana.className} mb-3 text-2xl`}>
+        Please verify your email.
+      </h1>
+      <p><a href="/login">If you already have an account, click here to log in.</a></p>
+    </div>
   }
   else {
     return (
