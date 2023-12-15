@@ -3,6 +3,7 @@
 import { comfortaa, verdana, verdana_italic } from "@/app/ui/fonts";
 import dynamic from 'next/dynamic';
 
+// 
 export default function Page() {
   const h2 = `${verdana_italic.className} text-lg md:text-xl text-colors_default`
   const p = `${verdana.className} text-sm md:text-base`

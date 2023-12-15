@@ -1,11 +1,10 @@
 import { Metadata } from 'next';
+import Search from '@/app/ui/search';
+import { comfortaa } from '@/app/ui/fonts';
  
 export const metadata: Metadata = {
   title: 'Search',
 };
-
-import Search from '@/app/ui/search';
-import { comfortaa } from '@/app/ui/fonts';
 
 export default async function Page({
     searchParams,
