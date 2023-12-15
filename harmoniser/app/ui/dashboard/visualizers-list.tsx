@@ -16,12 +16,24 @@ import Link from 'next/link';
   ];
 
   function changeSource(name: string) {
+    window.localStorage.setItem('currVisualizer', name);
     const visualizer = document.querySelector("video");
     const visualizerPromise = import('@/public/visualizers/' + name + '.mp4');
     visualizerPromise.then(function(result) {
       const path = result.default;
       visualizer?.setAttribute("src", path)
     });
+  }
+
+  function checkVisualizer() {
+    window.addEventListener('DOMContentLoaded', function(){
+      console.log("test");
+      if(window.localStorage.getItem('click') != null) {
+        const visualizerKey = window.localStorage.getItem('click');
+        document.getElementById(visualizerKey).click();
+        window.localStorage.removeItem('click');
+      }
+    })
   }
 
   export default function VisualizersList() {
@@ -35,14 +47,16 @@ import Link from 'next/link';
         {visualizers.map((visualizer) => {
           const LinkIcon = visualizer.icon;
           return (
-            <button
+            <Link
+              id={visualizer.name}
               key={visualizer.name}
+              href="/dashboard"
               className="flex h-[48px] grow text-colors_default items-center justify-center gap-2 rounded-md bg-block p-3 text-sm font-medium hover:bg-headerblock hover:text-colours-5 md:flex-none md:justify-start md:p-2 md:px-3"
               onClick={() => changeSource(visualizer.name)}
             >
               <LinkIcon className="w-6" />
               <p className="hidden md:block">{visualizer.name}</p>
-            </button>
+            </Link>
           );
         })}
       </>
