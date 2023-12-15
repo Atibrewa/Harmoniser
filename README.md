@@ -42,10 +42,6 @@ We want to thank all the artists and thinkers who's work has helped us create th
 The bulk of our audio came from [Musopen](https://musopen.org/).  
 [Pexels](https://www.pexels.com/) is a super uselful website where artists upload videos and photographs for open use. We really reccomend it because they're high quality and free to use without any watermarks.
 
-#### Upbeat Study
-Audio: La vita è bella, Nicola Piovani  
-Video Clips: [MART PRODUCTION](https://www.pexels.com/@mart-production/), [Engin Akyurt](https://www.pexels.com/@enginakyurt/), [Bakkaprabhu Uppar](https://www.pexels.com/@techcrazebk/), [StefWithAnF](https://www.pexels.com/@stefwithanf-1955763/), [Miguel Á. Padriñán](https://www.pexels.com/@padrinan/), [Dan Cristian Pădureț](https://www.pexels.com/@paduret/)
-
 #### Calming Lava
 Audio: Gymnopedies, Satie  
 Video Clips: [Anthony 🙂](https://www.pexels.com/@inspiredimages/)
@@ -57,6 +53,10 @@ Video Clips: [lam loi](https://www.pexels.com/video/early-morning-sunlight-throu
 #### Soothing Rain
 Audio: Nocturne in E flat major, Chopin  
 Video Clips: [Lisa Fotios](https://www.pexels.com/@fotios-photos/)
+
+#### Upbeat Study
+Audio: La vita è bella, Nicola Piovani  
+Video Clips: [MART PRODUCTION](https://www.pexels.com/@mart-production/), [Engin Akyurt](https://www.pexels.com/@enginakyurt/), [Bakkaprabhu Uppar](https://www.pexels.com/@techcrazebk/), [StefWithAnF](https://www.pexels.com/@stefwithanf-1955763/), [Miguel Á. Padriñán](https://www.pexels.com/@padrinan/), [Dan Cristian Pădureț](https://www.pexels.com/@paduret/)
 
 ### Code Tutorials
 [React Foundations](https://nextjs.org/learn/react-foundations)  
