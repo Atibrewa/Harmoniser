@@ -2,9 +2,9 @@
 An online visualiser for multipurpose applications inluding a focus on assisting people with disabilities and soothe symptoms
 
 ## Authors
-@Atibrewa  
-@SoulaiVang  
-@nlin02
+[Aahanaa Tibrewal](https://github.com/Atibrewa)
+[Nina Lin](https://github.com/nlin02)
+[Soulai Vang](https://github.com/SoulaiVang)
 
 ## Installation
 1. Pull the code
