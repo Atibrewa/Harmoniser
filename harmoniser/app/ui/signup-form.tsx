@@ -55,7 +55,11 @@ export default function SignUpForm() {
   }
 
   if (loading) {
-    return <h1>loading...</h1>
+    return <div>
+    <h1 className={`${verdana.className}`}>
+      Loading...
+    </h1>
+  </div>
   }
 
   if (complete) {

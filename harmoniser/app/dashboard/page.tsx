@@ -19,15 +19,15 @@ export default async function Page() {
   const supabase = createServerComponentClient<Database>({ cookies: () => cookieStore })
   const { data: {user} } = await supabase.auth.getUser()
 
-  console.log({user})
+  // console.log({user})
 
-  if (!user) {
-    return (
-      <Link href={'/login'}>
-        You are not logged in. Click here to log in.
-      </Link>
-    )
-  }
+  // if (!user) {
+  //   return (
+  //     <Link href={'/login'}>
+  //       You are not logged in. Click here to log in.
+  //     </Link>
+  //   )
+  // }
 
   const tempvis = Visualiser('hello');
 

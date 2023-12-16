@@ -11,8 +11,8 @@ import Link from 'next/link';
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   {
-    name: 'Help',
-    href: '/dashboard/help',
+    name: 'About Us',
+    href: '/dashboard/aboutus',
     icon: QuestionMarkCircleIcon,
   },
   { name: 'Settings', href: '/dashboard/settings', icon: CogIcon },
