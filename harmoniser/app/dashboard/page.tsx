@@ -28,6 +28,7 @@ export default async function Page() {
 
   // Returns some text and the visualiser element wrapped in a div
   return <div className={`rounded-lg bg-block p-6`}>
+    {/* TODO _______________________ placeholder */}
   <h1 className={`${comfortaa.className} text-colors_default text-2xl md:text-3xl`}>Placeholder</h1><br></br>
     {tempvis}
   </div>;

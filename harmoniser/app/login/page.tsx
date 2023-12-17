@@ -8,8 +8,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * 
- * @returns 
+ * Sets up the page and calls a function to create a form for login
  */
 export default function LoginPage() {
   return (

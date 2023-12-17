@@ -4,6 +4,11 @@ import Link from 'next/link';
 import { verdana, verdana_bold } from './ui/fonts';
 import Image from 'next/image';
 
+/**
+ * The landing page for users that are not logged in. This is a static page that has liks to the login and signup pages.
+ * It is generated in html and returned in a main element
+ * @returns the landing page
+ */
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col bg-background p-6">
@@ -15,6 +20,7 @@ export default function Page() {
           <p className={`${verdana.className} text-xl text-gray-800 lg:text-3xl lg:leading-normal`}>
             <span className={`${verdana_bold.className}`}>Welcome to Harmoniser.</span> A place to sleep, relax, focus, and let all of your stress melt away.
           </p>
+          {/* Login & SignUp buttons */}
           <div className="flex gap-6">
             <div className = "flex flex-col justify-center gap-6">
               <h1 className = {`${verdana.className} text-xl`}>Returning User?</h1>
@@ -37,6 +43,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+          {/* Two versions of the image for desktop and mobile! */}
           <Image 
             src="/landing_desktop.png"
             width={1000}

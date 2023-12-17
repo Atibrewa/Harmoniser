@@ -1,12 +1,15 @@
 import { Metadata } from 'next';
- 
+import LogoDashboard from '@/app/ui/dashboard/logo-dashboard';
+import SignUpForm from '@/app/ui/signup-form';
+
+// Title will show up as 'SignUp | Harmoniser'
 export const metadata: Metadata = {
   title: 'SignUp',
 };
 
-import LogoDashboard from '@/app/ui/dashboard/logo-dashboard';
-import SignUpForm from '@/app/ui/signup-form';
- 
+/**
+ * Sets up the page and calls a function to create a form for new users to signup
+ */
 export default function SignUpPage() {
   return (
     <main className="flex items-center justify-center md:h-screen bg-colours-3">

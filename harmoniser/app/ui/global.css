@@ -21,7 +21,7 @@ input[type='number']::-webkit-outer-spin-button {
   @apply text-slate-900 dark:text-white;
 }
 
-/** customized backgrounds **/
+/** customized backgrounds (setup for colourblind mode, an upcoming feature **/
 .bg-headerblock {
   @apply bg-colours-1 dark:bg-colours-dark-1;
 }
