@@ -1,12 +1,20 @@
 import { Metadata } from 'next';
- 
-export const metadata: Metadata = {
-  title: 'Help',
-};
-
 import { comfortaa, verdana, verdana_italic } from "@/app/ui/fonts"
 
+// Title will show up as 'About Us | Harmoniser'
+export const metadata: Metadata = {
+  title: 'About Us',
+};
+
+
+// TODO Complete this page!!!!
+
+/**
+ * This is a static page with information about us, the makers and the app!
+ * @returns all info wrapped in a div element
+ */
 export default function Page() {
+  // Declaring Tailwind styling needed for elements on this page as variables for easy use!
   const h2 = `${verdana_italic.className} text-lg md:text-xl text-colors_default`
   const p = `${verdana.className} text-sm md:text-base text-colors_default`
 

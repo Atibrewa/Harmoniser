@@ -1,5 +1,5 @@
 # Harmoniser
-An online visualiser for multipurpose applications inluding a focus on assisting people with disabilities and soothe symptoms
+An online visualiser for multipurpose applications inluding a focus on assisting people with disabilities and soothe symptoms.
 
 ## Authors
 [Aahanaa Tibrewal](https://github.com/Atibrewa)

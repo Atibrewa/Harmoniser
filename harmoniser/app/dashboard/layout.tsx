@@ -1,7 +1,10 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 import TopNav from '@/app/ui/dashboard/topnav';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
- 
+
+/**
+ * This is the layout for the dashboard. This applies to all pages under dashboard, unless a different layout is declared within them!
+ * Adds the top and side nav bars to the page, which are rendered by their own separate files :)
+ */
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>

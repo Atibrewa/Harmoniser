@@ -1,12 +1,16 @@
 import { Metadata } from 'next';
- 
+import LogoDashboard from '@/app/ui/dashboard/logo-dashboard';
+import LoginForm from '@/app/ui/login-form';
+
+// Title will show up as 'Login | Harmoniser'
 export const metadata: Metadata = {
   title: 'Login',
 };
 
-import LogoDashboard from '@/app/ui/dashboard/logo-dashboard';
-import LoginForm from '@/app/ui/login-form';
- 
+/**
+ * 
+ * @returns 
+ */
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen bg-colours-3">

@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
 import Search from '@/app/ui/search';
 import { comfortaa } from '@/app/ui/fonts';
- 
+
+// Title will show up as 'Search | Harmoniser'
 export const metadata: Metadata = {
   title: 'Search',
 };
 
+/**
+ * TODO __________________________________________
+ * @param param0 
+ * @returns 
+ */
 export default async function Page({
     searchParams,
   }: {

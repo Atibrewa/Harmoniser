@@ -8,7 +8,6 @@ import type { Database } from '@/app/lib/database.types'
 /**
  * Sets up code exchange route to exchange an auth code for the user's session.
  */
-
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url)
   const code = requestUrl.searchParams.get('code')

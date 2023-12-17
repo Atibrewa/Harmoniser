@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: 'Credits',
 };
 
-// Credits is a static page with information and links to artists' pages, returns all info and links wrapped in a div element
+/**
+ * Credits is a static page with information and links to artists' pages.
+ * @returns all info and links wrapped in a div element 
+ */
 export default function Page() {
   // Declaring Tailwind styling needed for elements on this page as variables for easy use!
   const h2 = `${verdana_italic.className} text-lg md:text-xl`

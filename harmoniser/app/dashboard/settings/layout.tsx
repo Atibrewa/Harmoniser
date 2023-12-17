@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: 'Settings',
 };
 
-// This page is implemented with a layout because the page itself has client side components
-// Because of this, the metadata cannot be added to the page directly, this is a workaround
+/**
+ * This page is implemented with a layout because the page itself has client side components
+ * Because of this, the metadata cannot be added to the page directly, this is a workaround
+ */
 export default Page;
