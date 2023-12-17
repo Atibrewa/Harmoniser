@@ -35,7 +35,7 @@ export default function Page() {
               <h1 className = {`${verdana.className} text-xl`}>New Here?</h1>
               <Link
                 href="/signup"
-                className="flex items-center gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 lg:text-base"
+                className="flex items-center gap-5 self-start rounded-lg bg-colours-4 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-5 lg:text-base"
               >
                 <span>Sign Up</span> <ArrowRightIcon className="w-5 lg:w-6" />
               </Link>

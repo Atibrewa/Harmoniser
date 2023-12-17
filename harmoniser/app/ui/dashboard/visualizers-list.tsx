@@ -18,10 +18,13 @@ import Link from 'next/link';
   function changeSource(name: string) {
     window.localStorage.setItem('currVisualizer', name);
     const visualizer = document.querySelector("video");
+    const visualizerTag = document.querySelector("h1");
+    const links = document.querySelectorAll("")
     const visualizerPromise = import('@/public/visualizers/' + name + '.mp4');
     visualizerPromise.then(function(result) {
       const path = result.default;
-      visualizer?.setAttribute("src", path)
+      visualizer?.setAttribute("src", path);
+      visualizerTag.innerText = name;
     });
   }
 

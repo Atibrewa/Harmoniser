@@ -4,7 +4,9 @@ import { comfortaa, verdana, verdana_italic } from "@/app/ui/fonts";
 import dynamic from 'next/dynamic';
 
 /**
- * TODO ________________________________
+ * This page has the dark mode switcher and will have the colourblind mode once implementation is complete
+ * For more specific info on how there switchers work, you can look at their respective files.
+ * This file simply creates a theme switcher object and places it on the page.
  */
 export default function Page() {
   const h2 = `${verdana_italic.className} text-lg md:text-xl text-colors_default`

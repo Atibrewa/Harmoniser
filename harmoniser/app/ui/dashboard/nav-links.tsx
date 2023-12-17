@@ -19,6 +19,9 @@ const links = [
   { name: 'Credits', href: '/dashboard/credits', icon: BookOpenIcon },
 ];
 
+/**
+ * Renders and styles the links for the Top Nav!
+ */
 export default function NavLinks() {
   return (
     <>

@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 };
 
 /**
- * TODO __________________________________________
- * @param param0 
- * @returns 
+ * An in progress search page, currently it displays a box that takes inputs but we're working on the rest!
+ * It will be able to search by name or feature such as soothing, calming, upbeat etc!
  */
 export default async function Page({
     searchParams,
@@ -20,6 +19,7 @@ export default async function Page({
       page?: string;
     };
   }) {
+    // Retrieveing the parameters and creating a url
     const query = searchParams?.query || '';
     const currentPage = Number(searchParams?.page) || 1;
    

@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
+import Link from 'next/link';
 
 /**
  * Creates the sign up form for the Sign Up Page and handled user sign up authentication.
@@ -124,13 +125,18 @@ export default function SignUpForm() {
           </div>
   
           <Button
-            className="mt-4 w-full bg-colours-5 hover:bg-colours-4"
+            className="mt-4 w-full bg-colours-4 hover:bg-colours-5"
           >
             Sign Up <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
           </Button>
-
-          <p><a href="/login">If you already have an account, click here to log in.</a></p>
   
+          <Link 
+            className="flex items-center mt-4 w-full gap-5 self-start rounded-lg bg-colours-5 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-4 lg:text-base"
+            href="/login"
+          >
+            Already have an account? Log in!
+          </Link>
+
           <div className="flex h-8 items-end space-x-1">
             {/* Add form errors here */}
           </div>

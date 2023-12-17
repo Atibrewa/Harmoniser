@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 
-// TODO Complete this page!!!!
+// TODO Complete this page!!!! ____________________________
 
 /**
  * This is a static page with information about us, the makers and the app!

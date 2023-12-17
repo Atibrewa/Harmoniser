@@ -1,6 +1,10 @@
 import { comfortaa } from '@/app/ui/fonts';
 import Image from 'next/image';
 
+/**
+ * Imports an image of the logo and configures it along with text to be used on the landing page.
+ * Has 2 versions with different sizes for desktop and movble!
+ */
 export default function Logo() {
   return (
     <div
@@ -20,7 +24,7 @@ export default function Logo() {
       className='md:block hidden'
       alt={'Logo of website'} />
 
-      <p className="text-[54px]">Harmoniser</p>
+      <p className="text-[40px] md:text-[54px]">Harmoniser</p>
     </div>
   );
 }

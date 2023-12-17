@@ -10,10 +10,10 @@ import { verdana } from '@/app/ui/fonts';
 import {
   AtSymbolIcon,
   KeyIcon,
-  ExclamationCircleIcon,
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
+import Link from 'next/link';
 
 /**
  * Creates the login form for the Login Page and handles user login authentication.
@@ -119,7 +119,12 @@ export default function LoginForm() {
           Log In <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
         </Button>
 
-        <p><a href="/signup">If you don't have an account, click here to sign up.</a></p>
+        <Link 
+          className="flex items-center mt-4 w-full gap-5 self-start rounded-lg bg-colours-4 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-colours-5 lg:text-base"
+          href="/signup"
+        >
+          No account? Sign up!
+        </Link>
 
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
