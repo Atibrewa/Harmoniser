@@ -1,6 +1,6 @@
 import React from 'react'
 // This import throws an error in VScode but works perfectly if we run it an is correct code!
-import perfect_night_dance from '@/public/visualizers/perfect_night_dance.mp4'
+import harmoniser_video from '@/public/visualizers/Harmoniser_Home.mp4'
 
 /**
  * Creates a video element and returns it wrapped in a div with styling.
@@ -11,7 +11,7 @@ export default function Visualiser() {
     return (
       <div className="flex h-full flex-col md:px-2">
         <video controls preload='auto' loop> 
-          <source src= {perfect_night_dance} type="video/mp4"/>
+          <source src= {harmoniser_video} type="video/mp4"/>
         </video>
       </div>
     );
