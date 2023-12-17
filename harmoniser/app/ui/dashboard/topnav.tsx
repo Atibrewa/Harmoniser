@@ -3,20 +3,23 @@
 import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import { FormEvent, useEffect, useState } from 'react'
-import { comfortaa } from '@/app/ui/fonts';
 
 import type { Database } from '@/app/lib/database.types'
 
-import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
 
+/**
+ * Creates the Top Nav bar with links to subpages and a signout option.
+ * This also has the code that handles signout!
+ */
 export default function TopNav() {
   const router = useRouter()
   const [user, setUser] = useState<User | null>(null)
 
   const supabase = createClientComponentClient<Database>()  // connect this page to supabase
 
+  // gets the user so that when they signout, this file can handle it!
   useEffect(() => {
     async function getUser() {
       const {data: {user}} = await supabase.auth.getUser()
@@ -26,6 +29,7 @@ export default function TopNav() {
     getUser()
   }, [])
 
+  // sets the user to null, causes supabase authentication for this login session to end and user gets routed to landing page
   const handleSignOut = async (event: FormEvent) => {
     event.preventDefault();
     await supabase.auth.signOut()
@@ -35,8 +39,7 @@ export default function TopNav() {
     
   }
 
-  console.log({user})
-
+  // Returns the nav bar in a div with all links inside it :)
   return (
     <div className="flex h-full flex-row px-3 py-4 md:px-2">
       <div className="flex grow flex-row justify-between gap-2 space-x-2 md:flex-row md:space-x-0 md:space-y-2">

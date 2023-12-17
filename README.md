@@ -1,6 +1,8 @@
 # Harmoniser
 An online visualiser for multipurpose applications inluding a focus on assisting people with disabilities and soothe symptoms.
 
+<!-- ADD MORE HERERERERERE -->
+
 ## Authors
 [Aahanaa Tibrewal](https://github.com/Atibrewa)
 [Nina Lin](https://github.com/nlin02)
@@ -14,8 +16,16 @@ An online visualiser for multipurpose applications inluding a focus on assisting
 <!-- 5. To look at the dashboard which isn't fully linked yet, you need to go to (http://localhost:3000/dashboard) -->
 
 ## Tools Used
-versions, frameworks
-APIs
+Language:
+TypeScript
+
+Frontend:
+React
+Tailwind
+
+Backend:
+Next.js Server Side Rendering
+Supabase Database and user authentication
 
 
 ## pip requirements
@@ -32,6 +42,14 @@ APIs
 
 
 ## Known Issues
+- In desktop mode, selecting visualiser highlights it in the side nav bar but when in mobile mode, this highlight doesn't show up.
+- If you are not on the homepage, you have to click a visualizer twice (once to return to homepage, once to render the specific visualizer)
+- If you refresh the page while in dark mode, the logo will be presented in light mode and not in dark mode
+- our favicon doesn't currently show up because we aren't deployed. for now i only shows ntext's own favicon
+- there's a styling issue with login and signup so there is some whitespace below the blue background
+
+
+
 
 
 
@@ -62,6 +80,7 @@ Video Clips: [MART PRODUCTION](https://www.pexels.com/@mart-production/), [Engin
 [React Foundations](https://nextjs.org/learn/react-foundations)  
 [Learn Next.js](https://nextjs.org/learn/dashboard-app)  
 [Next.js Authentication with Supabase](https://www.youtube.com/watch?v=dhXjHGklaZc)
+[Create Light and Dark Mode Toggle](https://javascript.plainenglish.io/how-to-create-light-and-dark-mode-toggle-in-next-js-with-tailwind-61e67518fd2d)
 
 ### More Thanks
 We'd also really like to thank our professor, Joslenne Peña, for her help and support throughout the course of this project, our classmates and testers for making this so fun and giving us such great feedback and of course, the people on the world wide web, specially stack overflow, for their constant help when one gets stuck.

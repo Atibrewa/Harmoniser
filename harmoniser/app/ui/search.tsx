@@ -8,6 +8,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
   const pathname = usePathname();
   const { replace } = useRouter();
 
+  // Changes the current path name to be that of what is being searched
   function handleSearch(term: string) {
     console.log(term);
     const params = new URLSearchParams(searchParams);
@@ -19,6 +20,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     replace(`${pathname}?${params.toString()}`);
   }
 
+  // Returns all of the HTML related to the search tab
   return (
     <div className="relative flex flex-1 flex-shrink-0">
       <label htmlFor="search" className="sr-only">

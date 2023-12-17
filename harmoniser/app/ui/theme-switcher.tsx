@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+
+/* Original code is gotten from the tutorial linked here: https://javascript.plainenglish.io/how-to-create-light-and-dark-mode-toggle-in-next-js-with-tailwind-61e67518fd2d
+Modified for use of our website's dark model
+Stores a variable of a prefered theme into local storage so dark/light mode stay consistent upon user refresh */
 function ThemeSwitcher() {
   const storedTheme = window.localStorage.getItem('prefered-theme');
   const checkTheme = () => {
@@ -13,6 +17,7 @@ function ThemeSwitcher() {
   const smallLogo = document.querySelector("img");
   const largeLogo = document.querySelectorAll("img").item(1);
 
+  // Sets the light/dark theme CSS styling for the webpage along with changing it to the correct logo
   function setLightTheme() {
     setIsLight(true);
     window.localStorage.setItem('prefered-theme', 'lightTheme');
@@ -30,6 +35,7 @@ function ThemeSwitcher() {
     largeLogo?.setAttribute("srcset", "/_next/image?url=%2Flogo_dark.png&w=128&q=75 1x, /_next/image?url=%2Flogo_dark.png&w=256&q=75");
   }
   
+  // Adds the theme variable from local storage to the root of the HTML
   useEffect(() => {
     const setTheme = () => {
       const root = window.document.documentElement;
@@ -49,6 +55,8 @@ function ThemeSwitcher() {
     setTheme();
     console.log(`${storedTheme} selected`);
   }, [storedTheme]);
+
+  // Returns the button to actually toggle between light and dark mode, which can be toggled on the settings page
   return (
     <div className='theme-switcher items-center'>
       <button

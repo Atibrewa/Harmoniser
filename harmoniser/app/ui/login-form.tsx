@@ -16,9 +16,8 @@ import { Button } from './button';
 import Link from 'next/link';
 
 /**
- * Creates the login form for the Login Page and handles user login authentication.
+ * Creates the login form for the Login Page and handles user login authentication (through supabase).
  */
-
 export default function LoginForm() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -29,6 +28,7 @@ export default function LoginForm() {
 
   const supabase = createClientComponentClient<Database>()  // connect this page to supabase
 
+  // Sets the user once there is a successful login
   useEffect(() => {
     async function getUser() {
       const {data: {user}} = await supabase.auth.getUser()
@@ -39,6 +39,8 @@ export default function LoginForm() {
     getUser()
   }, [])
 
+  /* Handles login by waiting for successful Supabase authentication and then redirects 
+  the user to the dashboard page */
   const handleLogIn = async (event: FormEvent) => {
     event.preventDefault();
     const res = await supabase.auth.signInWithPassword({
@@ -51,8 +53,7 @@ export default function LoginForm() {
     setPassword('')
   }
 
-  // console.log({loading, user})
-
+  // Returns HTML if the page is still currently loading
   if (loading) {
     return <div>
     <h1 className={`${verdana.className}`}>
@@ -61,6 +62,7 @@ export default function LoginForm() {
   </div>
   }
 
+  /* Returns the login HTML for the form and buttons */
   return (
     <form onSubmit={handleLogIn} className="space-y-3">
       <div className="flex-1 rounded-lg bg-colours-2 px-6 pb-4 pt-8">

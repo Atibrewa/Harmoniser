@@ -2,6 +2,11 @@ import Link from 'next/link';
 import VisualizerLinks from './visualizers-list';
 import LogoDashboard from './logo-dashboard';
 
+/**
+ * Calls the file that renders the links for the side nav (the visualiser links).
+ * Also places a logo on the side nav
+ * @returns the side nav bar in a div element!
+ */
 export default function SideNav() {
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">

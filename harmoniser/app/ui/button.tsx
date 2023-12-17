@@ -4,7 +4,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-// TODO ____________________________
+/**
+ * Sets up and styles button objects for form submission! 
+ * (We use this in the login and sign up forms for the first button in each only)
+ */
 export function Button({ children, className, ...rest }: ButtonProps) {
   return (
     <button

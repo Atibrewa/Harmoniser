@@ -42,6 +42,8 @@ export default function SignUpForm() {
     getUser()
   }, [])
 
+  /* Handles sign up by waiting for successful Supabase authentication and then redirects 
+  the user to an email authentication page */
   const handleSignUp = async (event: FormEvent) => {
     event.preventDefault();
     const res = await supabase.auth.signUp({
@@ -55,6 +57,7 @@ export default function SignUpForm() {
     setComplete(true)
   }
 
+  // Returns HTML if the page is still currently loading
   if (loading) {
     return <div>
     <h1 className={`${verdana.className}`}>
@@ -63,6 +66,7 @@ export default function SignUpForm() {
   </div>
   }
 
+  /* Returns the sign up HTML for the form and buttons */
   if (complete) {
     return <div className="flex-1 rounded-lg bg-colours-2 px-6 pb-4 pt-8">
       <h1 className={`${verdana.className} mb-3 text-2xl`}>

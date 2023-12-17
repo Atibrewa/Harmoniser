@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
  * This file simply creates a theme switcher object and places it on the page.
  */
 export default function Page() {
+  // Declaring Tailwind styling needed for elements on this page as variables for easy use!
   const h2 = `${verdana_italic.className} text-lg md:text-xl text-colors_default`
   const p = `${verdana.className} text-sm md:text-base`
   const DynamicThemeSwitcher = dynamic(() => import('@/app/ui/theme-switcher'), {
