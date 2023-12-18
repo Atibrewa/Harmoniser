@@ -28,8 +28,6 @@ Next.js Server Side Rendering
 Supabase Database and user authentication
 
 
-## pip requirements
-
 
 
 
