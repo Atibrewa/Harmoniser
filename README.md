@@ -1,7 +1,10 @@
 # Harmoniser
 An online visualiser for multipurpose applications inluding a focus on assisting people with disabilities and soothe symptoms.
 
-<!-- ADD MORE HERERERERERE -->
+## About the app
+The story of our app came from the idea of creating a centralized place for different atmospheric needs. Whenever we need to focus or study, music helps us. Sometimes we want a cozy or focused atmosphere to study better or do homework better. Things like rain, or the crackling of a fireplace, paired with soft classical music help with that.
+Along with this, we also wanted to heavily focus on accessibility with this project, which can be seen in our choices of music, colour palettes, fonts and overall design.
+Along with this, because our visualizers are paired with selected music, one of our other goals was to help provide music therapy intervention for those who suffer from anxiety.
 
 ## Authors
 [Aahanaa Tibrewal](https://github.com/Atibrewa)
@@ -10,14 +13,15 @@ An online visualiser for multipurpose applications inluding a focus on assisting
 
 ## Installation
 1. Pull the code
-2. cd into the folder 'harmoniser' on terminal and type ```npm install``` (if this doesn't work, also run ```npm install next@latest react@latest react-dom@latest```)
-3. Run the code! ```npm run dev```
-4. Go to (http://localhost:3000/) and you're ready!
-<!-- 5. To look at the dashboard which isn't fully linked yet, you need to go to (http://localhost:3000/dashboard) -->
+2. cd into the folder 'harmoniser' on terminal
+3. type ```npm install``` (if this doesn't work, also run ```npm install next@latest react@latest react-dom@latest```)
+4. Run the code! ```npm run dev```
+5. Go to (http://localhost:3000/) and you're ready!
 
 ## Tools Used
-Language:
+Languages:
 TypeScript
+HTML, CSS
 
 Frontend:
 React
@@ -30,10 +34,9 @@ Supabase Database and user authentication
 
 
 
-
-## hosting
-
-
+## Hosting
+We plan on deploying this on github pages in the near future. We plan on using this for our capstones so we'd like to get things set up for easy sharing! Plus, we put a lot of hard work into this so people should be able to access it :)
+We have a free Supabase account for the database and authentication which will become deactivated given a week of inactivity on our site but can be easily reactivated for our capstones!
 
 ## Next Features
 
@@ -45,11 +48,6 @@ Supabase Database and user authentication
 - If you refresh the page while in dark mode, the logo will be presented in light mode and not in dark mode
 - our favicon doesn't currently show up because we aren't deployed. for now i only shows ntext's own favicon
 - there's a styling issue with login and signup so there is some whitespace below the blue background
-
-
-
-
-
 
 ## Credits
 We want to thank all the artists and thinkers who's work has helped us create this website :)
