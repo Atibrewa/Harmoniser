@@ -23,7 +23,7 @@ Along with this, because our visualizers are paired with selected music, one of 
 
 **Frontend:** React (v. 18.2.0), Tailwind (v. 3.3.3)
 
-**Backend:** Next.js Server Side Rendering (v. 14.0.2), Supabase Database (v. 2.39.0) and user authentication (v.0.8.7)
+**Backend:** Server Side Rendering with Next.js (v. 14.0.2), Database (v. 2.39.0) and user authentication (v.0.8.7) with Supabase
 
 ## Hosting
 We plan on deploying this on github pages in the near future. We plan on using this for our capstones so we'd like to get things set up for easy sharing! Plus, we put a lot of hard work into this so people should be able to access it :)
