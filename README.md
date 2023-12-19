@@ -19,25 +19,11 @@ Along with this, because our visualizers are paired with selected music, one of 
 5. Go to (http://localhost:3000/) and you're ready!
 
 ## Tools Used
-**Languages:**
+**Languages:** TypeScript (v. 5.2.2), HTML, CSS
 
-TypeScript, version 5.2.2
+**Frontend:** React (v. 18.2.0), Tailwind (v. 3.3.3)
 
-HTML, CSS
-
-
-**Frontend:**
-
-React, version 18.2.0
-
-Tailwind, version 3.3.3
-
-
-**Backend:**
-
-Next.js Server Side Rendering, version ^14.0.2
-
-Supabase Database and user authentication, version ^2.39.0
+**Backend:** Next.js Server Side Rendering (v. 14.0.2), Supabase Database (v. 2.39.0) and user authentication (v.0.8.7)
 
 ## Hosting
 We plan on deploying this on github pages in the near future. We plan on using this for our capstones so we'd like to get things set up for easy sharing! Plus, we put a lot of hard work into this so people should be able to access it :)
