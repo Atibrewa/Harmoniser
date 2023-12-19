@@ -19,19 +19,21 @@ Along with this, because our visualizers are paired with selected music, one of 
 5. Go to (http://localhost:3000/) and you're ready!
 
 ## Tools Used
-Languages:
+**Languages:**
 
 TypeScript, version 5.2.2
 
 HTML, CSS
 
-Frontend:
+
+**Frontend:**
 
 React, version 18.2.0
 
 Tailwind, version 3.3.3
 
-Backend:
+
+**Backend:**
 
 Next.js Server Side Rendering, version ^14.0.2
 
