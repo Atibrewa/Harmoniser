@@ -20,15 +20,21 @@ Along with this, because our visualizers are paired with selected music, one of 
 
 ## Tools Used
 Languages:
+
 TypeScript, version 5.2.2
+
 HTML, CSS
 
 Frontend:
+
 React, version 18.2.0
+
 Tailwind, version 3.3.3
 
 Backend:
+
 Next.js Server Side Rendering, version ^14.0.2
+
 Supabase Database and user authentication, version ^2.39.0
 
 ## Hosting
