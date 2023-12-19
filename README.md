@@ -20,26 +20,26 @@ Along with this, because our visualizers are paired with selected music, one of 
 
 ## Tools Used
 Languages:
-TypeScript
+TypeScript, version 5.2.2
 HTML, CSS
 
 Frontend:
-React
-Tailwind
+React, version 18.2.0
+Tailwind, version 3.3.3
 
 Backend:
-Next.js Server Side Rendering
-Supabase Database and user authentication
-
-
-
+Next.js Server Side Rendering, version ^14.0.2
+Supabase Database and user authentication, version ^2.39.0
 
 ## Hosting
 We plan on deploying this on github pages in the near future. We plan on using this for our capstones so we'd like to get things set up for easy sharing! Plus, we put a lot of hard work into this so people should be able to access it :)
 We have a free Supabase account for the database and authentication which will become deactivated given a week of inactivity on our site but can be easily reactivated for our capstones!
 
 ## Next Features
-
+- Favoriting Visualizers: Authenticated users are able to favorite visualizers and have them show up at the top of their list for future easy access.
+- Database for Visualizers: Moving the visualizers to be stored in a database rather than as static files in our repo, it will be easier to store larger media and assign things like tags and categories.
+- Search Feature: Currently, the search feature is unimplemented, but by moving the visualizers into a database, users can both search for visualizers by their exact title along with any associated tags/categories tied to that visualizer.
+- Mix & Match: Instead of having preset videos and audios, users may be able to customized their experience by mixing and matching different visualizers and audios together for their own suited needs and tastes.
 
 
 ## Known Issues
